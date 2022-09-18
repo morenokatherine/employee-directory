@@ -1,0 +1,18 @@
+<div *ngIf="employee" class="card">
+  <img [src]="employee.companyImage" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">{{employee.name}}</h5>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Phone: {{employee.phone}}</li>
+      <li class="list-group-item">Office Number: {{employee.officeNumber}}</li>
+      <li class="list-group-item">Postion: {{employee.position}}</li>
+      <li class="list-group-item">Manager: {{employee.manager}}</li>
+    </ul>
+    <div class="my-card-footer">
+      <a href="#" class="btn btn-outline-danger" (click)="deleteEmployee(employee.id)">Delete</a>
+    </div>
+  </div>
+</div>
+<div *ngIf="!employee" class="card unselect">
+  <h1>Select an employee 💼</h1>
+</div>

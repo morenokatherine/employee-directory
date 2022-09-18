@@ -1,0 +1,13 @@
+:host {
+  width: 100%;
+}
+
+.my-card-footer {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;;
+}
+
+.unselect {
+  padding: 40px;
+}
